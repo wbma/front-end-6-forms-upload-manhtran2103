@@ -13,4 +13,12 @@ export class MediaService {
     const headers = new HttpHeaders().set('x-access-token', `${token}`)
     return this.http.get(this.baseUrl+"users/user", {headers: headers});
   }
+
+  upLoadMedia(data){
+    const headers = new HttpHeaders()
+    // .set('Content-Type','multipart/form-data')
+    .set('x-access-token', localStorage.getItem('token'));
+    return this.http.post(this.baseUrl+'media', data, {headers: headers});
+  }
+
 }

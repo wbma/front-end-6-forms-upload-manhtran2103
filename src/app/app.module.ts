@@ -10,6 +10,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { RegisterComponent } from './components/register/register.component';
+import { UploadComponent } from './components/upload/upload.component';
 
 const routeConfig = [
   {
@@ -41,7 +42,8 @@ const routeConfig = [
     TopBarComponent,
     LoginComponent,
     LogoutComponent,
-    RegisterComponent
+    RegisterComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
